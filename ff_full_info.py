@@ -1195,7 +1195,8 @@ def get_major_login(access_token: str, open_id: str,
 
 def _load_credentials_txt() -> Optional[Dict[str, str]]:
     """Read uid=/password= from credentials.txt next to this script if present."""
-    path = os.path.join(_HERE, "credentials.txt")
+    _here = os.path.dirname(os.path.abspath(__file__))
+    path = os.path.join(_here, "credentials.txt")
     if not os.path.isfile(path):
         return None
     uid, pwd = None, None
