@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+.ff_full_info_token.json
+ff_full_info_*.json
+credentials.txt
+.env
