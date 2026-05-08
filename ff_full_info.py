@@ -1096,7 +1096,7 @@ REGION_CLIENT_URLS: Dict[str, str] = {
 GARENA_CLIENT_ID = "100067"
 GARENA_CLIENT_SECRET = "2ee44819e9b4598845141067b281621874d0d5d7af9d8f7e00c1e54715b7d1e3"
 
-DEFAULT_TIMEOUT = 30
+DEFAULT_TIMEOUT = 10
 
 # JWT cache - reuse until it expires so we skip oauth + MajorLogin (saves ~1s).
 _TOKEN_CACHE_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), ".ff_full_info_token.json")
